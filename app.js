@@ -19,7 +19,7 @@ app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 // static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname + 'public')));
 
 // rotas
 app.use('/', require('./routes/routes'))
