@@ -4,13 +4,13 @@ const app = express()
 const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars')
 
-const PORT = 3000
+const PORT = 3000;
 
-app.listen(PORT, () => {
-  console.log(`Server is runing at ${PORT}`)
-})
+app.listen(PORT, function() {
+  console.log(`O express está rodando na porta ${PORT}`)
+});
 
-// body parser
+//body parser
 app.use(bodyParser.urlencoded({extended: false}));
 
 // handlebars
@@ -19,7 +19,7 @@ app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 // static folder
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')));
 
 // rotas
 app.use('/', require('./routes/routes'))
