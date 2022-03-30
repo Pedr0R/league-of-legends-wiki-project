@@ -1,8 +1,27 @@
-  header {
-    background-color: #1a1a1a;
-  }
-  #nav-item-text {
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
+#header{
+  background-color: #ff0000;
+  padding: 100px;
+
+}
+
+.navbar-nav li{
+  background-color: #1a1a1a;
+  display: inline;
+  float:left
+}
+
+.nav-link a{
+  display: block;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+#nav-item-text {
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#nav-item-text:hover {
+  color:#4d4d4d
+}
